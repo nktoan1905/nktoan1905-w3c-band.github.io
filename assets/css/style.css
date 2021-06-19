@@ -12,29 +12,71 @@ html {
     height:46px;
     background-color: #000;
 }
-#navigation{
 
+#header{
+
+}
+#header .search-button{
+    float: right;
+    padding: 0 21px;
+    
+}
+#header .search-button:hover {
+    background-color: #ff4436;
+    cursor: pointer;
+}
+#header .fa-search{
+    font-size: 20px;
+    color: #fff;
+    line-height: 46px;
+}
+#navigation{
+    display: inline-block;
+}
+#navigation .nav-arrow-down{
+    font-size: 14px;
 }
 #navigation>li{
     display: inline-block;
-
+    position: relative;
 }
 #navigation>li>a{
     text-decoration: none;
     color: #fff;
     line-height: 46px;
-    font-size: 22px;
+
     padding: 0 24px;
+    text-transform: uppercase;
+}
+#navigation>li:hover >a,
+.subnav>li:hover > a{
+    color: #000;
+    background-color: #ccc;
+    display: block;
 }
 #navigation .subnav {
     display:none;
+    position: absolute;
+    top: 100%;
+    background-color: #fff;
+    list-style-type: none;
+    min-width: 160px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
-#header{
+#navigation li:hover .subnav{
+    display: block;
+}
+
+.subnav > li > a {
+    text-decoration: none;
+    color: #000;
+    line-height: 38px;
+    padding: 0 16px;
 
 }
-
 #slider{
-
+    min-height: 500px;
+    /* background-color: #333; */
 }
 
 #content{
