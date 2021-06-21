@@ -84,7 +84,7 @@ html {
 #slider{
     margin-top: 46px;
     padding-top: 50%;
-    background:url('/assets/img/slider/slider1.jpg') top center / cover no-repeat;
+    background:url('../img/slider/slider1.jpg') top center / cover no-repeat;
     position: relative;
 }
 #slider .text-content{
@@ -178,7 +178,7 @@ html {
     text-align: center;
     line-height: 24px;
     color: #fff;
-    margin-top: -2.5px;~
+    margin-top: -2.5px;
 }
 #footer{
 
