@@ -7,16 +7,39 @@
 html {
     font-family: Arial, Helvetica, sans-serif;
 }
+/* common */
 .text-white {
     color: #fff !important;
 }
-.clear{
-    clear: left;
-}
-#main{
-    
-}
 
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.col-full{
+    width: 100%;
+}
+.col-third{
+    width: calc(100%/3);
+}
+.col-half{
+    width: 50%;
+}
+.text-center{
+    text-align: center;
+}
+.mt-8{
+    margin-top: 8px!important;
+}
+.mt-16{
+    margin-top: 16px!important;
+}
+/* main */
 #header{
     position: fixed;
     top: 0;
@@ -137,13 +160,9 @@ html {
 }
 #content  .member-list{
     margin-top:48px;
-    overflow: hidden;
+    
 }
-#content  .member-item {
-    float: left;
-    width: calc(100%/3);
-    text-align:center;
-}
+
 #content .member-name{
     font-size: 15px;
     padding-bottom: 15px;
@@ -185,14 +204,8 @@ html {
 }
 
 .place-list{
-    margin: 32px -8px 0 -8px;
-    padding-bottom:  48px;
-}
-.place-item{
-    float: left;
-    width: calc(100%/3);
-    padding: 0 8px;
-
+    margin-top: 32px;
+    margin-bottom: 48px;
 }
 .img-place{
     width: 100%;
@@ -230,6 +243,41 @@ html {
 }
 .place-button:hover{
     background-color: #ccc;
+    color: #000;
+}
+/* contact-form */
+.contact-info{
+    font-size: 15px;
+    line-height:1.5;
+}
+.contact-info .icon{
+    width:30px;
+    display: inline-block;
+}
+.contact-form {
+    font-size:  15px;
+}
+.contact-form .form-control{
+    padding: 10px;
+    border: 1px solid #ccc;
+    width:100%;
+}
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.form-submit-btn{
+    background: #000;
+    color: #fff;
+    padding: 10px 19px;
+    float: right;
+    outline: none;
+    cursor: pointer;
+    border:none;
+}
+.form-submit-btn:hover{
+    background: #ccc;
     color: #000;
 }
 #footer{
