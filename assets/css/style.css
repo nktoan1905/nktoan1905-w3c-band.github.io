@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 html {
+    scroll-behavior: smooth;
     font-family: Arial, Helvetica, sans-serif;
 }
 /* common */
@@ -38,6 +39,9 @@ html {
 }
 .mt-16{
     margin-top: 16px!important;
+}
+.pull-right{
+    float: right !important;
 }
 /* main */
 #header{
@@ -129,12 +133,10 @@ html {
     margin-top: 25px;
     font-size: 15px;
 }
-#content{
 
-}
 #content .content-section{
     width: 800px;
-    padding: 64px 0;
+    padding: 64px 0 112px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -233,15 +235,17 @@ html {
     font-size: 15px;
    line-height: 1.6;
 }
-.place-button{
+.btn{
     font-size:  15px;
     background-color: #000000;
     padding: 8px 16px;
     text-decoration: none;
     color: #fff;
     margin-bottom: 16px;
+    cursor: pointer;
+    border: none;
 }
-.place-button:hover{
+.btn:hover{
     background-color: #ccc;
     color: #000;
 }
@@ -267,19 +271,30 @@ html {
     display: block;
     clear: both;
 }
-.form-submit-btn{
-    background: #000;
-    color: #fff;
-    padding: 10px 19px;
-    float: right;
-    outline: none;
-    cursor: pointer;
-    border:none;
+.map-section img{
+    width: 100%;
 }
-.form-submit-btn:hover{
-    background: #ccc;
-    color: #000;
-}
+
 #footer{
+    padding: 64px 16px;
+}
+#footer .socials-list{
+    font-size:24px;
 
 }
+#footer .socials-list a{
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+#footer .socials-list a:hover{
+    color:rgba(0, 0, 0, 0.4);
+}
+#footer .copyright{
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.6);
+}
+#footer .copyright a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
+}
+
