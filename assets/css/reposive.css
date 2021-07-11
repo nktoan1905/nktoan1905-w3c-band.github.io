@@ -1,3 +1,27 @@
+@media (max-width: 1023px){
+    .btn {
+        padding: 15px 16px;
+    }
+    .contact-form .form-control{
+        padding: 15px;
+    }
+    #footer .socials-list {
+        font-size: 48px;
+    }
+    #footer .socials-list a{
+        max-width: 0 8px;
+    }
+    #footer .copyright a{
+        padding: 0 15px;
+        display:inline-block;
+    }
+
+}
+@media (max-width: 1023px) and (min-width: 740px){
+    .contact-info{
+        line-height: 2 ;
+    }
+}
 @media (max-width: 739px) {
     .s-full-width{
         width: 100% !important;
